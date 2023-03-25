@@ -6,7 +6,7 @@ build-backend = "pdm.backend"
 
 [project]
 name = "dalaipy"
-version = "0.0.1"
+version = "1.0.0"
 authors = [
     { name = "William Stella", email = "william.a.stella@gmail.com" },
 ]
