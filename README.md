@@ -5,6 +5,7 @@ Dalai is a simple, and easy way to run LLaMa and Alpaca locally.
 
 ## Installation
 `pip install dalaipy==2.0.1`
+
 https://pypi.org/project/dalaipy/2.0.1/
 
 ## Instructions
@@ -22,6 +23,7 @@ print(model.request(request_dict))
 
 ## Credits
 [@cocktailpeanut](https://github.com/cocktailpeanut) - the owner of Dalai
+
 [@quadrismegistus](https://github.com/quadrismegistus) - made a notebook with the original idea of using python-socketio to communicate with the web server
 
 ## Docs
