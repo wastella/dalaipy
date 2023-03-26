@@ -4,7 +4,8 @@ A Python Wrapper for [Dalai](https://github.com/cocktailpeanut/dalai)!
 Dalai is a simple, and easy way to run LLaMa and Alpaca locally.
 
 ## Installation
-`pip install dalaipy`
+`pip install dalaipy==2.0.1`
+https://pypi.org/project/dalaipy/2.0.1/
 
 ## Instructions
 1. Go to [Dalai](https://github.com/cocktailpeanut/dalai), and set up your model of choice on your system (either Mac, Windows, or Linux). The readme provides clear explanations!
