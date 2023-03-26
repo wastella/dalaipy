@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/internal_funcs.py
+src/main.py
+src/dalaipy.egg-info/PKG-INFO
+src/dalaipy.egg-info/SOURCES.txt
+src/dalaipy.egg-info/dependency_links.txt
+src/dalaipy.egg-info/requires.txt
+src/dalaipy.egg-info/top_level.txt

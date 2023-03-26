@@ -1,14 +1,14 @@
 [build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "dalaipy"
-version = "1.0.0"
+version = "2.0.1"
 authors = [
   { name="William Stella", email="william.a.stella@gmail.com" },
 ]
-description = "A Package to Make Dalai Requests in Python!"
+description = "A Python Wrapper for Dalai"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
@@ -16,7 +16,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies = ["socketio"]
+dependencies = ["python-socketio"]
 
 [project.urls]
 "Homepage" = "https://github.com/wastella/dalaipy"
