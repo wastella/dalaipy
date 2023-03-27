@@ -43,7 +43,7 @@ print(model.request(request_dict))
     - `repeat_penalty`: default is 1.3
     - `seed`: the seed (default is -1)
     - `temp`: the temperature of the request (default is 0.5)
-    - `threads`: the number of threads to use (default is 8)
+    - `threads`: the number of threads to use (default is 4)
     - `top_k`: default is 40
     - `top_p`: default is 0.9
 
