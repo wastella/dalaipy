@@ -10,10 +10,10 @@ class Dalai:
     def __init__(self):
         self.RESULTS = {}
         self.REQ_IDS = []
-        self.FINISHED = None
+        self.CURRENT_ID = None
+        self.MOST_RECENT_WORD = None
         self.DONE = False
         self.RESULT = None
-
         self.setup()
     
     def setup(self):
@@ -32,7 +32,8 @@ class Dalai:
                 # Get this request ID
                 req_id = data.get('request',{}).get('id')
                 new_word = data.get('response','')
-
+                self.CURRENT_ID = req_id
+                
                 # And if it's not already in results
                 if not req_id in self.RESULTS:
                     # then initially stuff it with this data
@@ -44,8 +45,8 @@ class Dalai:
                     # then simply add the new response word
                     self.RESULTS[req_id]['response'] += new_word    
 
-                self.FINISHED = str(new_word).strip()
-                if self.FINISHED == "<end>" or self.FINISHED == "\n":
+                self.MOST_RECENT_WORD = str(new_word).strip()
+                if self.MOST_RECENT_WORD == "<end>" or self.MOST_RECENT_WORD == "\n":
                     self.DONE = True
                     if self.REQ_IDS and self.RESULTS:
                         # get latest id
@@ -59,6 +60,14 @@ class Dalai:
         self.sio.emit('request', request)
         while not self.DONE:
             time.sleep(0.01)
+
+        # Reset Vars
+        self.RESULTS = {}
+        self.REQ_IDS = []
+        self.CURRENT_ID = None
+        self.MOST_RECENT_WORD = None
+        self.DONE = False
+
         return self.RESULT
 
     def generate_request(self, prompt, model, id='0', n_predict=128, repeat_last_n=64, repeat_penalty=1.3, seed=-1, temp=0.5, threads=4, top_k=40, top_p=0.9):
