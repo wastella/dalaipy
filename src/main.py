@@ -3,6 +3,9 @@ import os
 import socketio
 import time as time
 
+class NoServerException(Exception):
+    pass
+
 class Dalai:
 
     sio = socketio.Client()
@@ -21,8 +24,7 @@ class Dalai:
         try:
             self.sio.connect('http://localhost:3000')
         except Exception as e:
-            print(e)
-            pass
+            raise NoServerException("NoServerException: No server was found, please make sure you have initiated your Dalai server")
 
         self.call_backs()
 

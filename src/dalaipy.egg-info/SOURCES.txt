@@ -2,7 +2,6 @@ LICENSE
 README.md
 pyproject.toml
 src/__init__.py
-src/internal_funcs.py
 src/main.py
 src/dalaipy.egg-info/PKG-INFO
 src/dalaipy.egg-info/SOURCES.txt

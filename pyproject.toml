@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dalaipy"
-version = "2.0.1"
+version = "2.0.2"
 authors = [
   { name="William Stella", email="william.a.stella@gmail.com" },
 ]
