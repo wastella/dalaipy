@@ -1,5 +1,5 @@
-# dalaipy
-A Python Wrapper for [Dalai](https://github.com/cocktailpeanut/dalai)!
+# dalaipy (NOTICE: THIS IS DEPRECATED, USE THE OFFICIAL [BINDINGS](https://github.com/abetlen/llama-cpp-python) FOR LLAMA.CPP, WILL RUN FASTER AND LESS BUGGY )
+A Python Wrapper for [Dalai](https://github.com/cocktailpeanut/dalai)
 
 Dalai is a simple, and easy way to run LLaMa and Alpaca locally.
 
